@@ -1,0 +1,69 @@
+.complaintForm {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.complaintOption {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0.5px solid #e9ecef;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.complaintOption:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.complaintRadio :global(.form-check-input) {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.complaintRadio :global(.form-check-input:checked) {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.complaintRadio :global(.form-check-label) {
+  cursor: pointer;
+}
+
+.titleContainer {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border-radius: 2px;
+}
+
+.subTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #6c757d;
+  margin-top: 0.5rem;
+  letter-spacing: 0.2px;
+} 

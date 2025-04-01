@@ -1,0 +1,125 @@
+.titleContainer {
+  margin-bottom: 2rem;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  margin-left: 20px;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border-radius: 2px;
+}
+
+.subTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6c757d;
+  margin-top: 0.5rem;
+  margin-left: 20px;
+  letter-spacing: 0.2px;
+}
+
+.reviewCard {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.reviewCardBody {
+  padding: 2rem;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionTitle i {
+  color: #3498db;
+}
+
+.reviewTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.reviewTable th,
+.reviewTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.reviewTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+  width: 40%;
+}
+
+.reviewTable td {
+  color: #2c3e50;
+}
+
+.reviewTable tr:hover {
+  background-color: #f8f9fa;
+}
+
+.alert {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  color: #2c3e50;
+}
+
+.alert i {
+  color: #3498db;
+  margin-right: 0.5rem;
+}
+
+.sectionHeader {
+  background-color: #f8f9fa;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.sectionHeader th {
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #495057;
+  text-align: left;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .reviewCardBody {
+    padding: 1.5rem;
+  }
+
+  .reviewTable th,
+  .reviewTable td {
+    padding: 0.75rem;
+  }
+} 

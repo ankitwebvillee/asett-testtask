@@ -1,0 +1,138 @@
+.titleContainer {
+  margin-bottom: 2rem;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  margin-left: 20px;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border-radius: 2px;
+}
+
+.subTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6c757d;
+  margin-top: 0.5rem;
+  margin-left: 20px;
+  letter-spacing: 0.2px;
+}
+
+.formCard {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.formCardBody {
+  padding: 2rem;
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  font-size: 4rem;
+  color: #28a745;
+  margin-bottom: 1.5rem;
+}
+
+.successContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.successTitle {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.successMessage {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.nextSteps {
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.sectionTitle i {
+  color: #3498db;
+}
+
+.stepsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stepsList li {
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.stepsList li::before {
+  content: "•";
+  color: #3498db;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .formCardBody {
+    padding: 1.5rem;
+  }
+
+  .successIcon {
+    font-size: 3rem;
+  }
+
+  .successTitle {
+    font-size: 1.5rem;
+  }
+
+  .successMessage {
+    font-size: 1rem;
+  }
+} 

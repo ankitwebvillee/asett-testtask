@@ -1,0 +1,125 @@
+.titleContainer {
+  margin-bottom: 2rem;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  margin-left: 20px;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border-radius: 2px;
+}
+
+.subTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6c757d;
+  margin-top: 0.5rem;
+  margin-left: 20px;
+  letter-spacing: 0.2px;
+}
+
+.formCard {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.formCardBody {
+  padding: 2rem;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionTitle i {
+  color: #3498db;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formControl {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2c3e50;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formControl:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  outline: none;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.formSelect {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2c3e50;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formSelect:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  outline: none;
+}
+
+.requiredField::after {
+  content: "*";
+  color: #e74c3c;
+  margin-left: 0.25rem;
+}
+
+.formRow {
+  margin-bottom: 1.5rem;
+}
+
+.formCol {
+  padding: 0 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .formCardBody {
+    padding: 1.5rem;
+  }
+} 
