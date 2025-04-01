@@ -23,7 +23,7 @@ function FooterSection({ steps, currentStep, onNext }: any) {
             </button>
             <button 
                 className="footer-button next"
-                onClick={() => {setCurrentStep(nextStep?.id || currentStep); onNext()}}
+                onClick={() => {onNext()}}
             >
                 {(nextStep?.title === 'Submitted' ? 'Submit' : nextStep?.title) || 'Submit'}
             </button>

@@ -11,8 +11,6 @@ const ComplaintProgress = ({ currentStep, steps, setCurrentStep }: any) => {
               <div className={styles.progressContent}>
                 <button
                   className={`${styles.progressButton} ${elm.id <= currentStep ? styles.active : ''}`}
-                  onClick={() => setCurrentStep(elm.id)}
-                  disabled={elm.id > currentStep + 1}
                 >
                   {index + 1}
                 </button>
