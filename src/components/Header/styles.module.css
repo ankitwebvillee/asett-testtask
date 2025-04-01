@@ -1,0 +1,96 @@
+.header {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #337ab7;
+    padding: 0.5rem 1rem;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: #e6e6e6;
+}
+
+.authButtons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.registerBtn,
+.loginBtn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.375rem 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.registerBtn {
+    background-color: transparent;
+}
+
+.registerBtn:hover {
+    background-color: #fff;
+    color: #337ab7;
+}
+
+.loginBtn {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.loginBtn:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.headerGraphic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pathImage {
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .authButtons {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .headerGraphic {
+        display: none;
+    }
+} 

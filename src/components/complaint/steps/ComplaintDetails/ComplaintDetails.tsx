@@ -51,7 +51,7 @@ const ComplaintDetails: React.FC<ComplaintDetailsProps> = ({ formData, onUpdate 
                 <Col md={6} className={styles.formCol}>
                   <Form.Group className={styles.formGroup}>
                     <Form.Label className={styles.formLabel}>
-                      Complaint Transaction Type
+                    Complaint Unique Identifier Type
                     </Form.Label>
                     <Form.Select 
                       className={styles.formSelect}
@@ -59,24 +59,25 @@ const ComplaintDetails: React.FC<ComplaintDetailsProps> = ({ formData, onUpdate 
                       onChange={(e) => handleChange('transactionType', e.target.value)}
                     >
                       <option value="">--None--</option>
-                      <option value="type1">Type 1</option>
-                      <option value="type2">Type 2</option>
+                      <option value="npi">National Provider Identifier (NPI)</option>
+                      <option value="ein">Employer Identification Number (EIN)</option>
+                      <option value="hpid">Health Plan ID</option>
+                      <option value="claim">Insurance Claim</option>
+                      <option value="billing">Medical Billing</option>
+                      <option value="prescription">Prescription Related</option>
+                      <option value="authorization">Prior Authorization</option>
+                      <option value="referral">Medical Referral</option>
+                      <option value="other">Other</option>
                     </Form.Select>
                   </Form.Group>
                 </Col>
               </Row>
-            </div>
 
-            <div className="mb-5">
-              <h5 className={styles.sectionTitle}>
-                <i className="bi bi-geo-alt"></i>
-                Location Information
-              </h5>
               <Row className={styles.formRow}>
                 <Col md={12} className={styles.formCol}>
                   <Form.Group className={styles.formGroup}>
                     <Form.Label className={styles.formLabel}>
-                      Location<span className={styles.requiredField}></span>
+                    Complaint Subject*<span className={styles.requiredField}></span>
                     </Form.Label>
                     <Form.Control 
                       type="text" 
@@ -89,13 +90,6 @@ const ComplaintDetails: React.FC<ComplaintDetailsProps> = ({ formData, onUpdate 
                   </Form.Group>
                 </Col>
               </Row>
-            </div>
-
-            <div className="mb-5">
-              <h5 className={styles.sectionTitle}>
-                <i className="bi bi-chat-dots"></i>
-                Complaint Description
-              </h5>
               <Row className={styles.formRow}>
                 <Col md={12} className={styles.formCol}>
                   <Form.Group className={styles.formGroup}>
@@ -132,6 +126,7 @@ const ComplaintDetails: React.FC<ComplaintDetailsProps> = ({ formData, onUpdate 
                   </Form.Group>
                 </Col>
               </Row>
+              
             </div>
           </Form>
         </Card.Body>

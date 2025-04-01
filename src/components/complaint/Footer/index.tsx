@@ -9,24 +9,62 @@ function FooterSection({ steps, currentStep, onNext }: any) {
 
     const { setCurrentStep } = useComplaintDetails()
     const navigate = useNavigate()
+
+    const getBackButtonText = () => {
+        switch (currentStep) {
+            case 1:
+                return 'Back'
+            case 2:
+                return 'Specify Complaint Types'
+            case 3:
+                return 'Complainant Information Types'
+            case 4:
+                return 'Filed Against Entity Information'
+            case 5:
+                return 'Complaint details Information'
+            default:
+                return 'Back'
+        }
+    }
+
+    const getNextButtonText = () => {
+        switch (currentStep) {
+            case 1:
+                return 'Complainant Information'
+            case 2:
+                return 'Filed Against Entity Information'
+            case 3:
+                return 'Complaint details Information'
+            case 4:
+                return 'Complaint Review'
+            case 5:
+                return 'Submit'
+            default:
+                return 'Home'
+        }
+    }
     
     return (
         <div className="footer-container">
+            {currentStep < 5 && 
             <button 
                 className="footer-button back"
                 onClick={() => !lastStep ? navigate('/') : setCurrentStep(lastStep?.id)}
             >
-                {lastStep?.title || 'Welcome'}
+                {`< ${getBackButtonText()}`}
             </button>
+            }
             <button className="footer-button cancel" onClick={() => navigate('/')}>
-                Cancel
+                 {currentStep > 5 ? 'Home' : 'Cancel'}
             </button>
+            {currentStep < 5 && 
             <button 
                 className="footer-button next"
                 onClick={() => {onNext()}}
             >
-                {(nextStep?.title === 'Submitted' ? 'Submit' : nextStep?.title) || 'Submit'}
+                {`${getNextButtonText()} >`}
             </button>
+}
         </div>
     )
 }

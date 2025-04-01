@@ -1,13 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
+import Header from "../../components/Header";
 
 function Landing() {
     const navigate = useNavigate();
     
     return (
-        <div className="container-fluid bg-light min-vh-100 py-5">
-            <div className="row justify-content-center">
-                <div className="col-12 col-lg-10">
+        <>
+            <Header />
+            <div className="container-fluid bg-light min-vh-100 py-5">
+                <div className="row justify-content-center">
+                    <div className="col-12 col-lg-10">
                     <main className="main-container p-5">
                         <div>
                             <div className={styles.titleContainer}>
@@ -66,6 +69,7 @@ function Landing() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

@@ -62,8 +62,11 @@ const FaeDetails: React.FC<FaeDetailsProps> = ({ formData, onUpdate }) => {
                       onChange={(e) => handleChange('organizationType', e.target.value)}
                     >
                       <option value="">--None--</option>
-                      <option value="type1">Type 1</option>
-                      <option value="type2">Type 2</option>
+                      <option value="Health Care Clearinghouse">Health Care Clearinghouse</option>
+                      <option value="Covered Health Care Provider">Covered Health Care Provider</option>
+                      <option value="Health Plan">Health Plan</option>
+                      <option value="Vendor">Vendor</option>
+                      <option value="Other">Other</option>
                     </Form.Select>
                   </Form.Group>
                 </Col>
